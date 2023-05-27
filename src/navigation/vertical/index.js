@@ -15,33 +15,12 @@ const navigation = () => {
     {
       title: 'Dashboard',
       icon: HomeOutline,
-      path: '/'
+      path: '/admin'
     },
     {
       title: 'Account Settings',
       icon: AccountCogOutline,
-      path: '/account-settings'
-    },
-    {
-      sectionTitle: 'Pages'
-    },
-    {
-      title: 'Login',
-      icon: Login,
-      path: '/pages/login',
-      openInNewTab: true
-    },
-    {
-      title: 'Register',
-      icon: AccountPlusOutline,
-      path: '/pages/register',
-      openInNewTab: true
-    },
-    {
-      title: 'Error',
-      icon: AlertCircleOutline,
-      path: '/pages/error',
-      openInNewTab: true
+      path: '/admin/account-settings'
     },
     {
       sectionTitle: 'User Interface'
@@ -49,27 +28,33 @@ const navigation = () => {
     {
       title: 'Typography',
       icon: FormatLetterCase,
-      path: '/typography'
+      path: '/admin/typography'
     },
     {
       title: 'Icons',
-      path: '/icons',
+      path: '/admin/icons',
       icon: GoogleCirclesExtended
     },
     {
       title: 'Cards',
       icon: CreditCardOutline,
-      path: '/cards'
+      path: '/admin/cards'
     },
     {
       title: 'Tables',
       icon: Table,
-      path: '/tables'
+      path: '/admin/tables'
     },
     {
       icon: CubeOutline,
       title: 'Form Layouts',
-      path: '/form-layouts'
+      path: '/admin/form-layouts'
+    },
+    {
+      title: 'Error',
+      icon: AlertCircleOutline,
+      path: '/admin/error',
+      openInNewTab: true
     }
   ]
 }
