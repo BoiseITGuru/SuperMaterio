@@ -13,12 +13,10 @@ import NProgress from 'nprogress'
 import { CacheProvider } from '@emotion/react'
 
 // ** Config Imports
-import { defaultACLObj } from 'src/configs/acl'
 import themeConfig from 'src/configs/themeConfig'
 
 // ** Component Imports
 import UserLayout from 'src/layouts/UserLayout'
-import AclGuard from 'src/layouts/components/auth/UserAclGuard'
 import AuthGuard from 'src/layouts/components/auth/UserAuthGuard'
 import GuestGuard from 'src/layouts/components/auth/UserGuestGuard'
 import ThemeComponent from 'src/@core/theme/ThemeComponent'
@@ -77,7 +75,6 @@ const App = props => {
   const getLayout = Component.getLayout ?? (page => <UserLayout>{page}</UserLayout>)
   const authGuard = Component.authGuard ?? true
   const guestGuard = Component.guestGuard ?? false
-  const aclAbilities = Component.acl ?? defaultACLObj
 
   return (
     <CacheProvider value={emotionCache}>
@@ -98,9 +95,7 @@ const App = props => {
               return (
                 <ThemeComponent settings={settings}>
                   <Guard authGuard={authGuard} guestGuard={guestGuard}>
-                    <AclGuard aclAbilities={aclAbilities} guestGuard={guestGuard} authGuard={authGuard}>
-                      {getLayout(<Component {...pageProps} />)}
-                    </AclGuard>
+                    {getLayout(<Component {...pageProps} />)}
                   </Guard>
                 </ThemeComponent>
               )

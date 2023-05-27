@@ -22,6 +22,9 @@ const AuthGuard = props => {
         if (await Session.doesSessionExist()) {
           // User is Logged In
           setLoggedIn(true)
+        } else {
+          // Not Logged In
+          setLoggedIn(false)
           if (router.asPath !== '/') {
             router.replace({
               pathname: '/login',
@@ -30,9 +33,6 @@ const AuthGuard = props => {
           } else {
             router.replace('/login')
           }
-        } else {
-          // Not Logged In
-          setLoggedIn(false)
         }
       }
 
@@ -41,7 +41,7 @@ const AuthGuard = props => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [router.route]
   )
-  if (loggedIn) {
+  if (!loggedIn) {
     return fallback
   }
 

@@ -19,3 +19,5 @@ export default function Auth() {
 
   return <SuperTokensComponentNoSSR />
 }
+
+Auth.guestGuard = true
