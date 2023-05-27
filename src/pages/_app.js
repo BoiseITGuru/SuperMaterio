@@ -2,6 +2,10 @@
 import Head from 'next/head'
 import { Router } from 'next/router'
 
+// ** Supertokens Imports
+import SuperTokensReact, { SuperTokensWrapper } from 'supertokens-auth-react'
+import { frontendConfig } from 'src/configs/frontendConfig'
+
 // ** Loader Import
 import NProgress from 'nprogress'
 
@@ -9,11 +13,18 @@ import NProgress from 'nprogress'
 import { CacheProvider } from '@emotion/react'
 
 // ** Config Imports
+import { defaultACLObj } from 'src/configs/acl'
 import themeConfig from 'src/configs/themeConfig'
 
 // ** Component Imports
 import UserLayout from 'src/layouts/UserLayout'
+import AclGuard from 'src/layouts/components/auth/UserAclGuard'
+import AuthGuard from 'src/layouts/components/auth/UserAuthGuard'
+import GuestGuard from 'src/layouts/components/auth/UserGuestGuard'
 import ThemeComponent from 'src/@core/theme/ThemeComponent'
+
+// ** Spinner Import
+import Spinner from 'src/@core/components/spinner'
 
 // ** Contexts
 import { SettingsConsumer, SettingsProvider } from 'src/@core/context/settingsContext'
@@ -29,6 +40,12 @@ import '../../styles/globals.css'
 
 const clientSideEmotionCache = createEmotionCache()
 
+// ** SuperTokens Init
+if (typeof window !== 'undefined') {
+  // we only want to call this init function on the frontend, so we check typeof window !== 'undefined'
+  SuperTokensReact.init(frontendConfig())
+}
+
 // ** Pace Loader
 if (themeConfig.routingLoader) {
   Router.events.on('routeChangeStart', () => {
@@ -42,12 +59,25 @@ if (themeConfig.routingLoader) {
   })
 }
 
+const Guard = ({ children, authGuard, guestGuard }) => {
+  if (guestGuard) {
+    return <GuestGuard fallback={<Spinner />}>{children}</GuestGuard>
+  } else if (!guestGuard && !authGuard) {
+    return <>{children}</>
+  } else {
+    return <AuthGuard fallback={<Spinner />}>{children}</AuthGuard>
+  }
+}
+
 // ** Configure JSS & ClassName
 const App = props => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
 
   // Variables
   const getLayout = Component.getLayout ?? (page => <UserLayout>{page}</UserLayout>)
+  const authGuard = Component.authGuard ?? true
+  const guestGuard = Component.guestGuard ?? false
+  const aclAbilities = Component.acl ?? defaultACLObj
 
   return (
     <CacheProvider value={emotionCache}>
@@ -61,13 +91,23 @@ const App = props => {
         <meta name='viewport' content='initial-scale=1, width=device-width' />
       </Head>
 
-      <SettingsProvider>
-        <SettingsConsumer>
-          {({ settings }) => {
-            return <ThemeComponent settings={settings}>{getLayout(<Component {...pageProps} />)}</ThemeComponent>
-          }}
-        </SettingsConsumer>
-      </SettingsProvider>
+      <SuperTokensWrapper>
+        <SettingsProvider>
+          <SettingsConsumer>
+            {({ settings }) => {
+              return (
+                <ThemeComponent settings={settings}>
+                  <Guard authGuard={authGuard} guestGuard={guestGuard}>
+                    <AclGuard aclAbilities={aclAbilities} guestGuard={guestGuard} authGuard={authGuard}>
+                      {getLayout(<Component {...pageProps} />)}
+                    </AclGuard>
+                  </Guard>
+                </ThemeComponent>
+              )
+            }}
+          </SettingsConsumer>
+        </SettingsProvider>
+      </SuperTokensWrapper>
     </CacheProvider>
   )
 }
