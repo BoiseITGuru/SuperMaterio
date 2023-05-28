@@ -18,9 +18,9 @@ import themeConfig from 'src/configs/themeConfig'
 
 // ** Component Imports
 import UserLayout from 'src/layouts/UserLayout'
-import AclGuard from 'src/layouts/components/auth/UserAclGuard'
-import AuthGuard from 'src/layouts/components/auth/UserAuthGuard'
-import GuestGuard from 'src/layouts/components/auth/UserGuestGuard'
+import AclGuard from 'src/@core/components/auth/AclGuard'
+import AuthGuard from 'src/@core/components/auth/AuthGuard'
+import GuestGuard from 'src/@core/components/auth/GuestGuard'
 import ThemeComponent from 'src/@core/theme/ThemeComponent'
 
 // ** Spinner Import

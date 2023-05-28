@@ -2,7 +2,7 @@
 import { useContext } from 'react'
 
 // ** Component Imports
-import { AbilityContext } from 'src/layouts/components/acl/Can'
+import { AbilityContext } from 'src/@core/components/acl/Can'
 
 const CanViewNavGroup = props => {
   // ** Props

@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 import Session from 'supertokens-web-js/recipe/session'
 
 // ** Context Imports
-import { AbilityContext } from 'src/layouts/components/acl/Can'
+import { AbilityContext } from 'src/@core/components/acl/Can'
 
 // ** Config Import
 import { buildAbilityFor } from 'src/configs/acl'

@@ -6,7 +6,7 @@ All notable changes to this template will be documented in this file.
 
 ### Added
 
-- ACL & User Roles
+- Basic ACL\User Roles for Admin/User Access
 
 ### Fixed
 
