@@ -37,10 +37,10 @@
   <p align="center">
     SuperMaterio is a supercharged version of Materio from ThemeSelection with the SuperTokens authentication system built in!!
     <br />
-    <a href="https://github.com/SuperToken-Themes/SuperMaterio"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SuperToken-Themes/documentation"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://super-materio.vercel.app">View Demo</a>
+    <a href="https://supermaterio.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/SuperToken-Themes/SuperMaterio/issues">Report Bug</a>
     ·
@@ -149,7 +149,7 @@ yarn dev
 
 | SuperMaterio Free Version                       | SuperMaterio Premium Version (Coming Soon!)        |
 | :---------------------------------------------- | :------------------------------------------------- |
-| [Demo](https://super-materio.vercel.app)        | Coming Soon!                                       |
+| [Demo](https://supermaterio.netlify.app/)       | Coming Soon!                                       |
 | User Overridable Layout                         | User Overridable Layout & Theme                    |
 | Basic SuperTokens Authentication Implementation | Complete SuperTokens Authentication Implementation |
 | User Management Dashbaord                       | User & SuperTokens Feature Management Dashboards   |
