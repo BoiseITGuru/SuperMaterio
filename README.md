@@ -28,7 +28,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/BoiseITGuru/SuperMaterio">
+  <a href="https://github.com/SuperToken-Themes/SuperMaterio">
     <img src="https://user-images.githubusercontent.com/64475785/158384184-1fe44a59-6b68-40f5-b860-d14c51f0ce5d.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -37,14 +37,14 @@
   <p align="center">
     SuperMaterio is a supercharged version of Materio from ThemeSelection with the SuperTokens authentication system built in!!
     <br />
-    <a href="https://github.com/BoiseITGuru/SuperMaterio"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SuperToken-Themes/SuperMaterio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://super-materio.vercel.app">View Demo</a>
     ·
-    <a href="https://github.com/BoiseITGuru/SuperMaterio/issues">Report Bug</a>
+    <a href="https://github.com/SuperToken-Themes/SuperMaterio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/BoiseITGuru/SuperMaterio/issues">Request Feature</a>
+    <a href="https://github.com/SuperToken-Themes/SuperMaterio/issues">Request Feature</a>
   </p>
 </div>
 
@@ -86,7 +86,7 @@ If you’re a developer looking for most powerful & comprehensive **Free MUI Rea
 
 SuperMaterio is based of the JavaScript version of Materio, if you are interested in contributing to work on the Typescript version please see the Contributing section below.
 
-See the [open issues](https://github.com/BoiseITGuru/SuperMaterio/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/SuperToken-Themes/SuperMaterio/issues) for a full list of proposed features (and known issues).
 
 ### Built With
 
@@ -117,7 +117,7 @@ Installing and running the template is super easy in Materio, please follow thes
 2. Clone the repo
 
 ```bash
-git clone https://github.com/BoiseITGuru/SuperMaterio.git
+git clone https://github.com/SuperToken-Themes/SuperMaterio.git
 ```
 
 3. Install Dependencies > It is recommended to use yarn for better dependency management
@@ -200,9 +200,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@BoiseITGuru](https://twitter.com/BoiseITGuru) - dev@boiseitguru.com.com
+Your Name - [@BoiseITGuru](https://twitter.com/BoiseITGuru) - dev@boiseitguru.com
 
-Project Link: [https://github.com/BoiseITGuru/SuperMaterio](https://github.com/BoiseITGuru/SuperMaterio)
+Project Link: [https://github.com/SuperToken-Themes/SuperMaterio](https://github.com/SuperToken-Themes/SuperMaterio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,16 +219,16 @@ Project Link: [https://github.com/BoiseITGuru/SuperMaterio](https://github.com/B
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/BoiseITGuru/SuperMaterio.svg?style=for-the-badge
-[contributors-url]: https://github.com/BoiseITGuru/SuperMaterio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/BoiseITGuru/SuperMaterio.svg?style=for-the-badge
-[forks-url]: https://github.com/BoiseITGuru/SuperMaterio/network/members
-[stars-shield]: https://img.shields.io/github/stars/BoiseITGuru/SuperMaterio.svg?style=for-the-badge
-[stars-url]: https://github.com/BoiseITGuru/SuperMaterio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/BoiseITGuru/SuperMaterio.svg?style=for-the-badge
-[issues-url]: https://github.com/BoiseITGuru/SuperMaterio/issues
-[license-shield]: https://img.shields.io/github/license/BoiseITGuru/SuperMaterio.svg?style=for-the-badge
-[license-url]: https://github.com/BoiseITGuru/SuperMaterio/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/SuperToken-Themes/SuperMaterio.svg?style=for-the-badge
+[contributors-url]: https://github.com/SuperToken-Themes/SuperMaterio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SuperToken-Themes/SuperMaterio.svg?style=for-the-badge
+[forks-url]: https://github.com/SuperToken-Themes/SuperMaterio/network/members
+[stars-shield]: https://img.shields.io/github/stars/SuperToken-Themes/SuperMaterio.svg?style=for-the-badge
+[stars-url]: https://github.com/SuperToken-Themes/SuperMaterio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SuperToken-Themes/SuperMaterio.svg?style=for-the-badge
+[issues-url]: https://github.com/SuperToken-Themes/SuperMaterio/issues
+[license-shield]: https://img.shields.io/github/license/SuperToken-Themes/SuperMaterio.svg?style=for-the-badge
+[license-url]: https://github.com/SuperToken-Themes/SuperMaterio/blob/master/LICENSE.txt
 [product-screenshot]: https://user-images.githubusercontent.com/64475785/158384546-57879619-2d6d-4df6-8dc3-b4e53a536d50.png
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-url]: https://nextjs.org/
