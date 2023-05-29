@@ -1,5 +1,6 @@
 import ThirdPartyEmailPasswordNode from 'supertokens-node/recipe/thirdpartyemailpassword'
 import SessionNode from 'supertokens-node/recipe/session'
+import UserRoles from 'supertokens-node/recipe/userroles'
 import { appInfo } from './appInfo'
 
 export const backendConfig = () => {
@@ -39,7 +40,8 @@ export const backendConfig = () => {
           // }),
         ]
       }),
-      SessionNode.init()
+      SessionNode.init(),
+      UserRoles.init()
     ],
     isInServerlessEnv: true
   }

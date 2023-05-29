@@ -15,12 +15,31 @@ const navigation = () => {
     {
       title: 'Dashboard',
       icon: HomeOutline,
-      path: '/admin'
+      path: '/dashboard'
     },
     {
       title: 'Account Settings',
       icon: AccountCogOutline,
-      path: '/admin/account-settings'
+      path: '/dashboard/account-settings'
+    },
+    {
+      sectionTitle: 'Site Administration',
+      action: 'read',
+      subject: 'admin'
+    },
+    {
+      title: 'Users',
+      icon: FormatLetterCase,
+      path: '/dashboard/admin/users',
+      action: 'read',
+      subject: 'admin'
+    },
+    {
+      title: 'Site Settings',
+      path: '/dashboard/admin/settings',
+      icon: GoogleCirclesExtended,
+      action: 'read',
+      subject: 'admin'
     },
     {
       sectionTitle: 'User Interface'
@@ -28,32 +47,32 @@ const navigation = () => {
     {
       title: 'Typography',
       icon: FormatLetterCase,
-      path: '/admin/typography'
+      path: '/dashboard/typography'
     },
     {
       title: 'Icons',
-      path: '/admin/icons',
+      path: '/dashboard/icons',
       icon: GoogleCirclesExtended
     },
     {
       title: 'Cards',
       icon: CreditCardOutline,
-      path: '/admin/cards'
+      path: '/dashboard/cards'
     },
     {
       title: 'Tables',
       icon: Table,
-      path: '/admin/tables'
+      path: '/dashboard/tables'
     },
     {
       icon: CubeOutline,
       title: 'Form Layouts',
-      path: '/admin/form-layouts'
+      path: '/dashboard/form-layouts'
     },
     {
       title: 'Error',
       icon: AlertCircleOutline,
-      path: '/admin/error',
+      path: '/dashboard/error',
       openInNewTab: true
     }
   ]

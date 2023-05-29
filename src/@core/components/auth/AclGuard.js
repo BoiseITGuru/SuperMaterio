@@ -1,11 +1,12 @@
 // ** React Imports
-import { useCallback, useEffect } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 // ** Next Import
 import { useRouter } from 'next/router'
 
 // ** SuperTokens Imports
 import Session from 'supertokens-web-js/recipe/session'
+import { UserRoleClaim } from 'supertokens-web-js/recipe/userroles'
 
 // ** Context Imports
 import { AbilityContext } from 'src/@core/components/acl/Can'
@@ -25,6 +26,8 @@ const AclGuard = props => {
   // ** Props
   const { aclAbilities, children, guestGuard = false, authGuard = true } = props
 
+  const [roles, setRoles] = useState([])
+
   // ** Hooks
   const router = useRouter()
 
@@ -39,18 +42,27 @@ const AclGuard = props => {
     }
   }, [])
 
+  const getRoles = useCallback(async () => {
+    if (await Session.doesSessionExist()) {
+      let roles = await Session.getClaimValue({ claim: UserRoleClaim })
+
+      setRoles(roles)
+    }
+  }, [])
+
   // ** Vars
   let ability
   useEffect(() => {
+    getRoles()
     if (doesSessionExist && !guestGuard && router.route === '/') {
-      const homeRoute = getHomeRoute('<TODO - ROLES>')
+      const homeRoute = getHomeRoute(roles)
       router.replace(homeRoute)
     }
   }, [guestGuard, router])
 
   // User is logged in, build ability for the user based on his role
   if (doesSessionExist && !ability) {
-    ability = buildAbilityFor('<TODO - ROLES>', aclAbilities.subject)
+    ability = buildAbilityFor(roles, aclAbilities.subject)
     if (router.route === '/') {
       return <Spinner />
     }
