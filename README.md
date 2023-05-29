@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/BoiseITGuru/SuperMaterio">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/64475785/158384184-1fe44a59-6b68-40f5-b860-d14c51f0ce5d.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">SuperMaterio</h3>
@@ -80,6 +80,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+## Introduction 🚀
+
+If you’re a developer looking for most powerful & comprehensive **Free MUI React NextJS Admin Dashboard Template w/ Authentication Built In**, that is designed for developers, rich with features, and highly customizable, look no further than SuperMaterio. We’ve taken Materio from ThemeSelection and baked in SuperTokens authentication system to bring you the very best admin template that is not only easy to use and highly scalable but also includes a compelte User Dashboard to jumpstart your project. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
+
+SuperMaterio is based of the JavaScript version of Materio, if you are interested in contributing to work on the Typescript version please see the Contributing section below.
+
+See the [open issues](https://github.com/BoiseITGuru/SuperMaterio/issues) for a full list of proposed features (and known issues).
+
 ### Built With
 
 - [![Next][next.js]][next-url]
@@ -101,47 +109,65 @@ This is an example of how to list things you need to use the software and how to
 - yarn
 - SuperTokens Self-Hosted/Managed Instance
 
-### Installation
+## Installation ⚒️
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/BoiseITGuru/SuperMaterio.git
-   ```
-2. Install yarn packages
-   ```sh
-   yarn install
-   ```
-3. Copy .env.example to .env and modify the values
-   ```sh
-   cp .env.example .env
-   ```
-4. Start the dev server
-   ```sh
-   yarn dev
-   ```
+Installing and running the template is super easy in Materio, please follow these steps and you should be ready to rock 🤘
+
+1. Make sure you have installed Node.js (LTS). If Node.js is already installed in your system, make sure the installed version is LTS (and not the latest version)
+2. Clone the repo
+
+```bash
+git clone https://github.com/BoiseITGuru/SuperMaterio.git
+```
+
+3. Install Dependencies > It is recommended to use yarn for better dependency management
+
+```bash
+# For npm
+
+npm install --legacy-peer-deps
+
+# For yarn
+
+yarn install
+```
+
+4. Copy .env.example to .env and modify the values
+
+```bash
+cp .env.example .env
+```
+
+5. Start the dev server
+
+```bash
+yarn dev
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
+<!-- WHATS INCUDED -->
 
-## Usage
+## What's Included 📦
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
-
-See the [open issues](https://github.com/BoiseITGuru/SuperMaterio/issues) for a full list of proposed features (and known issues).
+- Layouts
+  - Blank
+  - Full
+  - Boxed
+- Dashboard
+- SuperTokens Dashboard
+  - Users
+  - Site Settings
+- Pages
+  - Account Settings
+  - Sign-up
+  - Sign-in
+  - Error
+- Typography
+- Material Design Icons by Community
+- Basic Cards
+- Tables
+- Form Layouts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
