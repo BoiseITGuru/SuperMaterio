@@ -16,19 +16,20 @@ const FooterContent = () => {
           ❤️
         </Box>
         {` by `}
+        <Link target='_blank' href='https://github.com/SuperToken-Themes'>
+          SuperTokens-Themes
+        </Link>
+        {` & `}
         <Link target='_blank' href='https://themeselection.com/'>
           ThemeSelection
         </Link>
       </Typography>
       {hidden ? null : (
         <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', '& :not(:last-child)': { mr: 4 } }}>
-          <Link
-            target='_blank'
-            href='https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free/blob/main/LICENSE'
-          >
+          <Link target='_blank' href='https://github.com/SuperToken-Themes/SuperMaterio/blob/main/LICENSE'>
             MIT License
           </Link>
-          <Link target='_blank' href='https://themeselection.com/'>
+          <Link target='_blank' href='https://github.com/SuperToken-Themes'>
             More Themes
           </Link>
           <Link
@@ -37,10 +38,7 @@ const FooterContent = () => {
           >
             Documentation
           </Link>
-          <Link
-            target='_blank'
-            href='https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free/issues'
-          >
+          <Link target='_blank' href='https://github.com/SuperToken-Themes/SuperMaterio/issues'>
             Support
           </Link>
         </Box>

@@ -52,12 +52,12 @@ const AppBarContent = props => {
             target='_blank'
             rel='noreferrer'
             sx={{ mr: 4, display: 'flex' }}
-            href='https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free'
+            href='https://github.com/SuperToken-Themes/SuperMaterio'
           >
             <img
               height={24}
               alt='github stars'
-              src='https://img.shields.io/github/stars/themeselection/materio-mui-react-nextjs-admin-template-free?style=social'
+              src='https://img.shields.io/github/stars/SuperToken-Themes/SuperMaterio?style=social'
             />
           </Box>
         )}
